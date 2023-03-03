@@ -1,129 +1,151 @@
-@font-face {
-    font-family: 'Hanken Grotesk';
-    src: url('/results-summary-component-main/assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('ttf') tech('variations');
-    font-weight: 500 700 800;
-  }
-
-body { 
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: gainsboro;
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: gainsboro;
+  font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .main-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
-    margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  margin: auto;
 }
 
 .component-wrapper {
-    background-color: white; 
-    display: flex;
-    flex-direction: row;
-    border-radius: 2rem;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  border-radius: 2rem;
 }
 
 /* Left card and contents */
 
 .left-content-wrapper {
-    background-color: blue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    color: white;
-    padding: 1rem 2rem;
-    border-radius: 2rem;
+  background: linear-gradient(
+    180deg,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  color: white;
+  padding: 2rem 2rem;
+  border-radius: 2rem;
 }
 
 .result-heading {
-    font-size: 18px;    
-
+  font-size: 1.5rem;
+  margin-top: 0px;
 }
 
 .circle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: darkblue;
-    border-radius: 100%;
-    width: 200px;
-    height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    180deg,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0) 100%
+  );
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
 }
 
 .large-number {
-    font-size: 6rem;
-    margin: 0px;
-    line-height: 0.9;
+  font-size: 6rem;
+  margin: 0px;
+  line-height: 0.9;
 }
 
 .of-100 {
-    margin: 0px;
-
+  margin: 0px;
+  opacity: 60%;
 }
 
 .great-heading {
-    font-size: 2rem;
-    line-height: 1;
-    font-family: Hanken-Gortesk;
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 700;
+  margin: 0;
+
 }
 
 .score-info {
-
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  opacity: 65%;
 }
 
 /* Right card and contents */
 
-.right-content-wrapper{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    padding: 2rem;
-    border-radius: 2rem;
+.right-content-wrapper {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 2rem;
 }
 
 .summary-heading {
-
-    text-align: left;
-
+  font-size: 1.5rem;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .rows {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 1rem;
-
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
 }
 
 .feature {
-    background-color: blanchedalmond;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0px 1rem;
-    border-radius: 1rem;
+  background-color: blanchedalmond;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
 }
 
-.stats {
+.stats-name-wrapper{
+  display: flex;
+  flex-direction: row;
 
+}
+
+.icon {
+  margin-right: 10px;
+
+}
+
+.stats-numbers {
+  font-weight: 500;
 }
 
 .hundred {
+  color: gainsboro;
 
 }
 
 button {
-    padding: 1rem 0px;
-    border: none;
-    border-radius: 2rem;    
-
+  padding: 1rem 0px;
+  border: none;
+  border-radius: 2rem;
+  font-size: 18px;
+  padding: 1rem 0;
+  margin-top: 1rem;
 }
